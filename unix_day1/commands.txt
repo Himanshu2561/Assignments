@@ -1,3 +1,4 @@
+Section - 1
 1. cd / | cd /bin | ls
 2. ls -a
 3. ls r*
@@ -11,3 +12,51 @@
 11. ls -l | tee text1.txt
 12. tail +10 text1.txt
 13. w | wc -l
+
+Section - 2
+1. wc -w text1.txt
+2. ls text1.txt | less
+3. {
+        echo "This is some text in FILE2" > FILE2
+
+        ls -i FILE2
+        ls -l FILE2
+
+        ln FILE2 LINK1
+        ln FILE2 LINK2
+
+        ls -i FILE2 LINK1 LINK2
+        ls -l FILE2 LINK1 LINK2
+    }
+
+4. who && pwd
+5. date +"Today is %A, %d %B %y"
+6. echo "Deposited \$100 to you account"
+7. echo "The long listing of my home dir $(pwd) is" && ls -l "$(pwd)"
+8. {
+    a. find ~/ -type f \( -name "*.c" -o -name "*.pl" \)
+    b. find ~/ -type d -perm 755
+    c. find ~/ -type d -perm 655
+    d. find ~/ -type f -inum 12122
+    e. find ~/ -type f -atime +365 -print > Old_File
+    f. find ~/ -type f -size +1024c
+}
+
+Section - 3
+1. {
+    a. vi Data1.txt
+    b. (esc) :wq (enter)
+    c. vi
+    d. {
+        vi
+        (press 'i' to enter insert mode) type text
+        esc (to exit insert mode)
+        :w MyData2.txt (enter)
+
+    }
+    e. {
+        vi (i)
+        type text
+        (esc) :q! (enter)
+    }
+}
