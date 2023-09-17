@@ -1,1 +1,8 @@
 1. cd / | cd /bin | ls
+2. ls -a
+3. ls r*
+4. ls -d ???
+5. ls *.doc
+6. ls [l-s]*
+7. touch text1 && cat > text1 //After inputing press ctrl+d to exit from input mode)
+)
