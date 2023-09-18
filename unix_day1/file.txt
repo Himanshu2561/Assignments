@@ -1,0 +1,8 @@
+Symbolic link is an indirect pointer to a file
+Unix File structure is hierarchical like an upside down tree.
+ar files cannot contain another file, or directory
+Directory File Contains directory(s) and/or file(s) within it
+Device files are used to represent physical devices.
+Unix Unix Unix Unix Unix
+Unix is multi user operating system, Unix is multi tasking operating system
+Everything on Unix is a file.

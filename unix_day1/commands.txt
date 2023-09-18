@@ -60,3 +60,59 @@ Section - 3
         (esc) :q! (enter)
     }
 }
+2. {
+    vi (filename) (enter)
+    write the text
+    :w (filename) (enter)    
+}
+3. (esc) :set number
+4. {
+    Ensure you are in normal mode by pressing Esc.
+
+    Move the cursor to the beginning of the first line you want to move (line 1 in this case).
+
+    Enter visual mode by pressing Shift + V (uppercase "V").
+
+    Move the cursor down to select the first three lines by pressing 3j (this will select lines 1 to 3).
+
+    Cut the selected lines by pressing d (for delete).
+
+    Move the cursor to the end of the file by pressing G (uppercase "G").
+
+    Paste the cut lines at the end of the file by typing p (for paste).
+
+    Save the changes and exit Vim by typing :wq and pressing Enter.
+}
+
+5. {
+    Ensure you are in normal mode by pressing Esc.
+
+    Move the cursor to the beginning of the 5th line. You can do this by typing 5G and then pressing 0 to move to the start of the line.
+
+    Enter visual mode by pressing Shift + V (uppercase "V").
+
+    Select the entire 5th line by typing 5l (this will select the 5th line).
+
+    Cut the selected line by pressing d (for delete).
+
+    Move the cursor to the beginning of the first line by typing 1G and then pressing 0.
+
+    Paste the cut line above the first line by typing P (uppercase "P").
+
+    Save the changes and exit Vim by typing :wq and pressing Enter.
+}
+6. {
+    To search for the word "Unix" forward, press / (the slash key).
+
+    Type the word you want to search for, in this case, "Unix".
+
+    Press Enter. Press n for next occurence.
+}
+7. {
+    To search for the word "Unix" backward, press ?.
+
+    Type the word you want to search for, in this case, "Unix".
+
+    Press Enter. Press n for previous occurence.
+}
+8. :%s/Unix/UnixOS/g
