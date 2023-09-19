@@ -1,8 +1,118 @@
+Section - 1
 1. cd / | cd /bin | ls
 2. ls -a
 3. ls r*
 4. ls -d ???
 5. ls *.doc
 6. ls [l-s]*
-7. touch text1 && cat > text1 //After inputing press ctrl+d to exit from input mode)
-)
+7. touch text1 && cat > text1 //After inputing press ctrl+d to exit from input mode
+8. cp text1 text2
+9. cat text1 > text2
+10. ls -l | grep "^-" | wc -l
+11. ls -l | tee text1.txt
+12. tail +10 text1.txt
+13. w | wc -l
+
+Section - 2
+1. wc -w text1.txt
+2. ls text1.txt | less
+3. {
+        echo "This is some text in FILE2" > FILE2
+
+        ls -i FILE2
+        ls -l FILE2
+
+        ln FILE2 LINK1
+        ln FILE2 LINK2
+
+        ls -i FILE2 LINK1 LINK2
+        ls -l FILE2 LINK1 LINK2
+    }
+
+4. who && pwd
+5. date +"Today is %A, %d %B %y"
+6. echo "Deposited \$100 to you account"
+7. echo "The long listing of my home dir $(pwd) is" && ls -l "$(pwd)"
+8. {
+    a. find ~/ -type f \( -name "*.c" -o -name "*.pl" \)
+    b. find ~/ -type d -perm 755
+    c. find ~/ -type d -perm 655
+    d. find ~/ -type f -inum 12122
+    e. find ~/ -type f -atime +365 -print > Old_File
+    f. find ~/ -type f -size +1024c
+}
+
+Section - 3
+1. {
+    a. vi Data1.txt
+    b. (esc) :wq (enter)
+    c. vi
+    d. {
+        vi
+        (press 'i' to enter insert mode) type text
+        esc (to exit insert mode)
+        :w MyData2.txt (enter)
+
+    }
+    e. {
+        vi (i)
+        type text
+        (esc) :q! (enter)
+    }
+}
+2. {
+    vi (filename) (enter)
+    write the text
+    :w (filename) (enter)    
+}
+3. (esc) :set number
+4. {
+    Ensure you are in normal mode by pressing Esc.
+
+    Move the cursor to the beginning of the first line you want to move (line 1 in this case).
+
+    Enter visual mode by pressing Shift + V (uppercase "V").
+
+    Move the cursor down to select the first three lines by pressing 3j (this will select lines 1 to 3).
+
+    Cut the selected lines by pressing d (for delete).
+
+    Move the cursor to the end of the file by pressing G (uppercase "G").
+
+    Paste the cut lines at the end of the file by typing p (for paste).
+
+    Save the changes and exit Vim by typing :wq and pressing Enter.
+}
+
+5. {
+    Ensure you are in normal mode by pressing Esc.
+
+    Move the cursor to the beginning of the 5th line. You can do this by typing 5G and then pressing 0 to move to the start of the line.
+
+    Enter visual mode by pressing Shift + V (uppercase "V").
+
+    Select the entire 5th line by typing 5l (this will select the 5th line).
+
+    Cut the selected line by pressing d (for delete).
+
+    Move the cursor to the beginning of the first line by typing 1G and then pressing 0.
+
+    Paste the cut line above the first line by typing P (uppercase "P").
+
+    Save the changes and exit Vim by typing :wq and pressing Enter.
+}
+6. {
+    To search for the word "Unix" forward, press / (the slash key).
+
+    Type the word you want to search for, in this case, "Unix".
+
+    Press Enter. Press n for next occurence.
+}
+7. {
+    To search for the word "Unix" backward, press ?.
+
+    Type the word you want to search for, in this case, "Unix".
+
+    Press Enter. Press n for previous occurence.
+}
+8. :%s/Unix/UnixOS/g

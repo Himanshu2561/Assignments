@@ -1,0 +1,8 @@
+Symbolic link is an indirect pointer to a file
+UnixOS File structure is hierarchical like an upside down tree.
+ar files cannot contain another file, or directory
+Directory File Contains directory(s) and/or file(s) within it
+Device files are used to represent physical devices.
+UnixOS UnixOS UnixOS UnixOS UnixOS
+UnixOS is multi user operating system, UnixOS is multi tasking operating system
+Everything on UnixOS is a file.
