@@ -1,0 +1,3 @@
+Hello this is a nano file and made for the assignments purpose
+We can write the code and text files for the similar purpose 
+Checking for the number of lines and words in the code file
